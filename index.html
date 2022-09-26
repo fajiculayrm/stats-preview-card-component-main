@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <link rel="stylesheet" href="./style/style.css" />
+
+        <title>Frontend Mentor | Stats preview card component</title>
+    </head>
+    <body>
+        <main>
+            <picture class="imageContainer">
+                <source
+                    srcset="./images/image-header-desktop.jpg"
+                    media="(min-width: 768px)"
+                />
+                <img
+                    src="./images/image-header-mobile.jpg"
+                    alt="People talking in the office"
+                    class="bannerImage"
+                />
+            </picture>
+            <section class="details">
+                <h1 class="title">
+                    Get <span>insights</span> that help your business grow.
+                </h1>
+                <p class="description">
+                    Discover the benefits of data analytics and make better
+                    decisions regarding revenue, customer experience, and
+                    overall efficiency.
+                </p>
+                <ul>
+                    <li>
+                        <p class="count">10k+</p>
+                        <p class="data">companies</p>
+                    </li>
+                    <li>
+                        <p class="count">314</p>
+                        <p class="data">templates</p>
+                    </li>
+                    <li>
+                        <p class="count">12M+</p>
+                        <p class="data">queries</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by
+                <a href="https://github.com/keyztrokee">Raymond Fajiculay</a>.
+            </div>
+        </footer>
+    </body>
+</html>
