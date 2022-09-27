@@ -77,11 +77,9 @@ select {
 }
 html {
   font-family: "Inter", sans-serif;
-  font-size: 62.5%;
 }
 
 body {
-  font-size: 1.5rem;
   background-color: hsl(233deg, 47%, 7%);
   min-height: 100vh;
   color: hsl(0deg, 0%, 100%);
@@ -93,16 +91,17 @@ body {
 }
 
 main {
-  width: min(90%, 110rem);
+  width: 90%;
   background-color: hsl(244deg, 38%, 16%);
-  border-radius: 1rem;
+  border-radius: 0.625rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 76.8rem) {
+@media (min-width: 48em) {
   main {
     flex-direction: row;
+    max-width: 68.75rem;
   }
 }
 
@@ -110,7 +109,7 @@ main {
   background-color: hsl(277deg, 64%, 61%);
   order: 1;
 }
-@media (min-width: 76.8rem) {
+@media (min-width: 48em) {
   .imageContainer {
     width: 50%;
     order: 2;
@@ -122,28 +121,34 @@ main {
   opacity: 0.8;
   width: 100%;
 }
+@media (min-width: 48em) {
+  .bannerImage {
+    height: 100%;
+    width: 100%;
+  }
+}
 
 .details {
   order: 2;
-  padding: 2rem 3rem;
+  padding: 1.25rem 1.875rem;
   text-align: center;
 }
-@media (min-width: 76.8rem) {
+@media (min-width: 48em) {
   .details {
     width: 50%;
     order: 1;
-    padding: 5rem;
+    padding: 3.125rem;
     text-align: left;
   }
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 1.875rem;
   color: hsl(0deg, 0%, 100%);
 }
-@media (min-width: 76.8rem) {
+@media (min-width: 48em) {
   .title {
-    font-size: 3.5rem;
+    font-size: 2.1875rem;
   }
 }
 
@@ -152,38 +157,39 @@ main {
 }
 
 .description {
-  margin: 1rem 0;
-  font-size: 1.6rem;
+  margin: 0.625rem 0;
+  font-size: 1rem;
 }
-@media (min-width: 76.8rem) {
+@media (min-width: 48em) {
   .description {
-    margin: 2rem 0;
-    font-size: 1.8rem;
+    margin: 1.25rem 0;
+    font-size: 1.1875rem;
   }
 }
 
 ul {
   font-family: "Inter", sans-serif;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   padding: 0;
-  gap: 2rem;
+  gap: 1.25rem;
 }
-@media (min-width: 76.8rem) {
+@media (min-width: 48em) {
   ul {
     flex-direction: row;
     justify-content: flex-start;
-    gap: 6rem;
-    margin-top: 6rem;
+    gap: 3.75rem;
+    margin-top: 3.75rem;
   }
 }
 
 .count {
   color: hsl(0deg, 0%, 100%);
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
 }
 
 .data {

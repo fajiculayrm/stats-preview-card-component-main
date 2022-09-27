@@ -3,11 +3,9 @@
 
 html {
     font-family: $main-font;
-    font-size: 62.5%;
 }
 
 body {
-    font-size: 1.5rem;
     background-color: $main-background;
     min-height: 100vh;
     color: $white;
@@ -19,14 +17,15 @@ body {
 }
 
 main {
-    width: min(90%, 110rem);
+    width: 90%;
     background-color: $card-background;
-    border-radius: 1rem;
+    border-radius: $px10;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     @media (min-width: $tablet) {
         flex-direction: row;
+        max-width: 68.75rem;
     }
 }
 
@@ -43,25 +42,29 @@ main {
     mix-blend-mode: multiply;
     opacity: 0.8;
     width: 100%;
+    @media (min-width: $tablet) {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .details {
     order: 2;
-    padding: 2rem 3rem;
+    padding: $px20 $px30;
     text-align: center;
     @media (min-width: $tablet) {
         width: 50%;
         order: 1;
-        padding: 5rem;
+        padding: $px50;
         text-align: left;
     }
 }
 
 .title {
-    font-size: 3rem;
+    font-size: $px30;
     color: $white;
     @media (min-width: $tablet) {
-        font-size: 3.5rem;
+        font-size: $px35;
     }
 }
 
@@ -70,34 +73,35 @@ main {
 }
 
 .description {
-    margin: 1rem 0;
-    font-size: 1.6rem;
+    margin: $px10 0;
+    font-size: $px16;
     @media (min-width: $tablet) {
-        margin: 2rem 0;
-        font-size: 1.8rem;
+        margin: $px20 0;
+        font-size: $px18;
     }
 }
 
 ul {
     font-family: $main-font;
-    margin-top: 4rem;
+    margin-top: $px40;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     padding: 0;
-    gap: 2rem;
+    gap: $px20;
     @media (min-width: $tablet) {
         flex-direction: row;
         justify-content: flex-start;
-        gap: 6rem;
-        margin-top: 6rem;
+        gap: $px60;
+        margin-top: $px60;
     }
 }
 
 .count {
     color: $white;
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: $px24;
 }
 
 .data {
