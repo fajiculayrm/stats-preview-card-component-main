@@ -75,11 +75,8 @@ select {
     scroll-behavior: auto !important;
   }
 }
-html {
-  font-family: "Inter", sans-serif;
-}
-
 body {
+  font-family: "Inter", sans-serif;
   background-color: hsl(233deg, 47%, 7%);
   min-height: 100vh;
   color: hsl(0deg, 0%, 100%);
@@ -198,7 +195,7 @@ ul {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 
